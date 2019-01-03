@@ -1,0 +1,25 @@
+stages:
+  - test
+  - deploy
+
+cache:
+  paths:
+    - vendor
+
+# test job
+test:
+  stage: test
+  image: edbizarro/gitlab-ci-pipeline-php:7.2
+  script:
+    - sudo composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
+#    - vendor/bin/phpunit --configuration phpunit.xml
+
+# upload job, see https://lftp.yar.ru/lftp-man.html
+upload:
+  stage: deploy
+  image: mwienk/docker-lftp:latest
+  script:
+    - lftp -e "set ftp:ssl-allow false; mirror -eRnv $LOCAL_DIR $REMOTE_DIR; exit;" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST
+  only:
+    - master
+  when: manual

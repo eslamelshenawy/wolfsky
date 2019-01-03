@@ -1,0 +1,38 @@
+.section-feed,
+.page-title span,
+.home-tabs.nav-tabs .nav-link.active,
+.home-tabs.nav-tabs .nav-link:hover, 
+.home-tabs.nav-tabs .nav-item.show .nav-link,
+.text-icon2,
+.block:hover .text-icon,
+.hotels-layout .image-wrapper .title-wrapper .title:before,
+.hotels-layout .content-wrapper .list-info .link:hover,
+.hotels-layout .content-wrapper .list-info .share-social-list .link-social:hover,
+.tours-layout .content-wrapper .list-info .share-social-list .link-social:hover,
+.hotels-layout .content-wrapper > .content .group-btn-tours:hover,
+#sync2 .current .item,
+.page-link:focus, .page-link:hover,
+.navbar-light .navbar-nav .show > .nav-link, 
+.navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .nav-link.active,
+.btn-warning,
+.bg-warning{
+	background-color: #D6BF6A !important;
+}
+.page-title h1,
+.page-title p,
+.home-tabs.nav-tabs .nav-link i,
+.hotels-layout:hover .image-wrapper .title-wrapper .title,
+.price,
+.footer-widget h3,
+.footer-widget ul li a i.fa-angle-left,
+.text-warning {
+	color: #D6BF6A !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #D6BF6A !important;
+}
+.btn-warning {
+    border-color: #D6BF6A;
+}
